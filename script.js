@@ -195,7 +195,7 @@
       title: "Aspirin, Hausmittel oder Heilpflanzen? Auf der Suche nach der goldenen Mitte",
       html: `
         <button class="category-back-btn" type="button" data-blog-open="topic-natur">← Zurück zur Übersicht</button>
-        <audio class="podcast-player" controls preload="metadata" style="width: 100%; margin-bottom: 1.5rem; border-radius: 0.9rem; filter: drop-shadow(0 8px 14px rgba(21, 75, 65, 0.08));">
+        <audio class="podcast-player" controls preload="none" style="width: 100%; margin-bottom: 1.5rem; border-radius: 0.9rem; filter: drop-shadow(0 8px 14px rgba(21, 75, 65, 0.08));">
           <source src="podcast-goldene-mitte.mp3" type="audio/mpeg">
           Dein Browser unterstützt die Audiowiedergabe nicht.
         </audio>
@@ -327,7 +327,7 @@
     "podcast-ursache": {
       title: "Podcast: Ursache und Wirkung",
       html: `
-        <audio class="podcast-player" controls preload="metadata" style="width: 100%; margin-bottom: 1.5rem; border-radius: 0.9rem; filter: drop-shadow(0 8px 14px rgba(21, 75, 65, 0.08));">
+        <audio class="podcast-player" controls preload="none" style="width: 100%; margin-bottom: 1.5rem; border-radius: 0.9rem; filter: drop-shadow(0 8px 14px rgba(21, 75, 65, 0.08));">
           <source src="Ursache_und_Wirkung.mp3" type="audio/mpeg">
           Dein Browser unterstützt die Audiowiedergabe nicht.
         </audio>
@@ -347,7 +347,7 @@
     "podcast-placebo": {
       title: "Podcast: Echte Heilenergie oder Placebo?",
       html: `
-        <audio class="podcast-player" controls preload="metadata" style="width: 100%; margin-bottom: 1.5rem; border-radius: 0.9rem; filter: drop-shadow(0 8px 14px rgba(21, 75, 65, 0.08));">
+        <audio class="podcast-player" controls preload="none" style="width: 100%; margin-bottom: 1.5rem; border-radius: 0.9rem; filter: drop-shadow(0 8px 14px rgba(21, 75, 65, 0.08));">
           <source src="Placebo vs. Pranaheilung.mp3" type="audio/mpeg">
           Dein Browser unterstützt die Audiowiedergabe nicht.
         </audio>
