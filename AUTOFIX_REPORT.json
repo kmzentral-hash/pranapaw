@@ -1,5 +1,5 @@
 {
-  "version": "11.0.5-autofix",
+  "version": "11.0.6-autofix",
   "fixed": [
     "Fragile asynchronous section transitions replaced with deterministic state switching",
     "Primary and secondary navigation moved to resilient event delegation",
@@ -23,6 +23,9 @@
     "Podcast audio elements switched from metadata preload to on-demand loading",
     "Global meditation player set to preload none for lower initial data transfer",
     "Large hero background image now loads only on larger screens",
-    "Data-saver preference now skips heavy background image download"
+    "Data-saver preference now skips heavy background image download",
+    "Hero background converted to WebP and wired for desktop backgrounds",
+    "Podcast audio files transcoded to lower bitrate optimized variants",
+    "Podcast sources switched to optimized MP3 assets"
   ]
 }

@@ -196,7 +196,7 @@
       html: `
         <button class="category-back-btn" type="button" data-blog-open="topic-natur">← Zurück zur Übersicht</button>
         <audio class="podcast-player" controls preload="none" style="width: 100%; margin-bottom: 1.5rem; border-radius: 0.9rem; filter: drop-shadow(0 8px 14px rgba(21, 75, 65, 0.08));">
-          <source src="podcast-goldene-mitte.mp3" type="audio/mpeg">
+          <source src="podcast-goldene-mitte.opt.mp3" type="audio/mpeg">
           Dein Browser unterstützt die Audiowiedergabe nicht.
         </audio>
         <p><strong>Die langjährigen Begleiter wie Ibuprofen und Co. bringen Beipackzettel voller Risiken mit sich. Auf der anderen Seite lockt die Naturheilkunde. Wie finden wir die goldene Mitte im Dschungel der Ratschläge?</strong></p>
@@ -328,7 +328,7 @@
       title: "Podcast: Ursache und Wirkung",
       html: `
         <audio class="podcast-player" controls preload="none" style="width: 100%; margin-bottom: 1.5rem; border-radius: 0.9rem; filter: drop-shadow(0 8px 14px rgba(21, 75, 65, 0.08));">
-          <source src="Ursache_und_Wirkung.mp3" type="audio/mpeg">
+          <source src="Ursache_und_Wirkung.opt.mp3" type="audio/mpeg">
           Dein Browser unterstützt die Audiowiedergabe nicht.
         </audio>
         <p><strong>Die universellen Gesetze der Energie verstehen.</strong></p>
@@ -348,7 +348,7 @@
       title: "Podcast: Echte Heilenergie oder Placebo?",
       html: `
         <audio class="podcast-player" controls preload="none" style="width: 100%; margin-bottom: 1.5rem; border-radius: 0.9rem; filter: drop-shadow(0 8px 14px rgba(21, 75, 65, 0.08));">
-          <source src="Placebo vs. Pranaheilung.mp3" type="audio/mpeg">
+          <source src="Placebo-vs-Pranaheilung.opt.mp3" type="audio/mpeg">
           Dein Browser unterstützt die Audiowiedergabe nicht.
         </audio>
         <p><strong>Ein verantwortungsvoller und offener Dialog.</strong></p>
