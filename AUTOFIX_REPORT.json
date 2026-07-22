@@ -1,5 +1,5 @@
 {
-  "version": "11.0.2-autofix",
+  "version": "11.0.3-autofix",
   "fixed": [
     "Fragile asynchronous section transitions replaced with deterministic state switching",
     "Primary and secondary navigation moved to resilient event delegation",
@@ -15,6 +15,10 @@
     "Newsletter inputs now use stable IDs instead of placeholder-based selectors",
     "Inline JavaScript in newsletter privacy link removed and unified with legal dialog delegation",
     "README deployment prerequisites aligned with current project state",
-    "README now includes GitHub Pages Setup Pages troubleshooting for Not Found errors"
+    "README now includes GitHub Pages Setup Pages troubleshooting for Not Found errors",
+    "Canonical, Open Graph URL and complete Twitter metadata added",
+    "Social preview image now uses absolute URL",
+    "Large background image preload removed to reduce initial network pressure",
+    "Google Fonts loading moved from CSS @import to HTML preconnect + stylesheet link"
   ]
 }
