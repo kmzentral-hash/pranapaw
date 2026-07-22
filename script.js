@@ -786,8 +786,8 @@
   const newsletterForm = document.getElementById("newsletter-blog-form");
   newsletterForm?.addEventListener("submit", (event) => {
     event.preventDefault();
-    const nameInput = newsletterForm.querySelector("input[placeholder='Dein Vorname']");
-    const emailInput = newsletterForm.querySelector("input[placeholder='Deine E-Mail-Adresse']");
+    const nameInput = newsletterForm.querySelector("#newsletter-name");
+    const emailInput = newsletterForm.querySelector("#newsletter-email");
     const privacyCheck = document.getElementById("newsletter-blog-check");
 
     if (!nameInput || !emailInput || !privacyCheck || !privacyCheck.checked) {

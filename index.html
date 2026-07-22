@@ -622,12 +622,12 @@
               <p>Abonniere unseren kostenfreien Newsletter und erhalte regelmäßig inspirierende Tagesimpulse, Podcast-Ankündigungen und exklusive Gedanken direkt in dein Postfach.</p>
               <form class="newsletter-form" id="newsletter-blog-form">
                 <div class="form-group-row">
-                  <input type="text" placeholder="Dein Vorname" aria-label="Vorname" required>
-                  <input type="email" placeholder="Deine E-Mail-Adresse" aria-label="E-Mail-Adresse" required>
+                  <input type="text" id="newsletter-name" name="newsletter-name" placeholder="Dein Vorname" aria-label="Vorname" autocomplete="given-name" required>
+                  <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Deine E-Mail-Adresse" aria-label="E-Mail-Adresse" autocomplete="email" required>
                 </div>
                 <div class="form-privacy">
                   <input type="checkbox" id="newsletter-blog-check" required>
-                  <label for="newsletter-blog-check">Ich stimme zu, dass pranapaw mir E-Mails sendet. Abmeldung ist jederzeit möglich. <a href="#datenschutz" onclick="event.preventDefault(); document.getElementById('legal-dialog').querySelector('#legal-title').textContent = 'Datenschutzerklärung'; document.getElementById('legal-dialog').querySelector('#legal-content').innerHTML = 'Hier stünde die Datenschutzerklärung...'; if (typeof document.getElementById('legal-dialog').showModal === 'function') { document.getElementById('legal-dialog').showModal(); } else { document.getElementById('legal-dialog').setAttribute('open', ''); }">Datenschutzerklärung</a>.</label>
+                  <label for="newsletter-blog-check">Ich stimme zu, dass pranapaw mir E-Mails sendet. Abmeldung ist jederzeit möglich. <a href="#datenschutz" data-legal="datenschutz">Datenschutzerklärung</a>.</label>
                 </div>
                 <button class="button button--primary" type="submit">Jetzt kostenfrei abonnieren</button>
               </form>
