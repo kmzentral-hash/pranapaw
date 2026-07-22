@@ -13,9 +13,8 @@ Responsive Onepage-Landingpage mit:
 ## Verwendung
 
 1. Den Ordner auf einen Webserver oder zu Netlify hochladen.
-2. In `index.html` die WhatsApp-Beispielnummer `491234567890` ersetzen.
-3. In `script.js` die Beispieladresse `kontakt@beispiel.de` ersetzen.
-4. Rechtstexte und Pflichtangaben fachlich prüfen und vervollständigen.
+2. Kontaktdaten (WhatsApp, E-Mail, Anschrift) in `index.html` und `script.js` bei Bedarf auf den finalen Stand bringen.
+3. Rechtstexte und Pflichtangaben fachlich prüfen und vervollständigen.
 
 Die Dateien müssen gemeinsam im selben Ordner liegen.
 
@@ -38,3 +37,11 @@ Die Seite ist danach erreichbar unter:
 - `https://<dein-github-name>.github.io/<repo-name>/`
 
 Hinweis: Änderungen an `index.html`, `styles.css`, `script.js` und Assets werden nach jedem Push automatisch veröffentlicht.
+
+### Troubleshooting GitHub Pages
+
+Wenn der Workflow im Schritt **Setup Pages** mit einer Meldung wie `Get Pages site failed` oder `HttpError: Not Found` fehlschlägt:
+
+1. In GitHub: **Settings -> Pages** öffnen.
+2. Unter **Build and deployment** bei **Source** auf **GitHub Actions** stellen.
+3. Den fehlgeschlagenen Workflow-Run in **Actions** mit **Re-run jobs** erneut starten.
