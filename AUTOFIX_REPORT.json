@@ -1,0 +1,16 @@
+{
+  "version": "11.0.0-autofix",
+  "fixed": [
+    "Fragile asynchronous section transitions replaced with deterministic state switching",
+    "Primary and secondary navigation moved to resilient event delegation",
+    "Mobile menu selector mismatch repaired",
+    "Hash navigation and browser history synchronized",
+    "Optional DOM elements guarded against null access",
+    "Dialog fallback added",
+    "Accordion and form bindings hardened",
+    "Hidden section behavior enforced",
+    "Header stacking, pointer events and touch behavior optimized",
+    "Mobile layout and menu placement optimized",
+    "CSS and JavaScript cache-busting added"
+  ]
+}
