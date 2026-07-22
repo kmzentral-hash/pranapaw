@@ -1,5 +1,5 @@
 {
-  "version": "11.0.4-autofix",
+  "version": "11.0.5-autofix",
   "fixed": [
     "Fragile asynchronous section transitions replaced with deterministic state switching",
     "Primary and secondary navigation moved to resilient event delegation",
@@ -21,6 +21,8 @@
     "Large background image preload removed to reduce initial network pressure",
     "Google Fonts loading moved from CSS @import to HTML preconnect + stylesheet link",
     "Podcast audio elements switched from metadata preload to on-demand loading",
-    "Global meditation player set to preload none for lower initial data transfer"
+    "Global meditation player set to preload none for lower initial data transfer",
+    "Large hero background image now loads only on larger screens",
+    "Data-saver preference now skips heavy background image download"
   ]
 }

@@ -70,10 +70,26 @@ a {
   position: fixed;
   inset: 0;
   z-index: -5;
-  background-image: url("hintergrundbild.png");
+  background:
+    radial-gradient(circle at 20% 20%, rgba(107, 229, 215, 0.25), transparent 48%),
+    radial-gradient(circle at 80% 30%, rgba(248, 217, 144, 0.24), transparent 52%),
+    linear-gradient(180deg, #8cced4 0%, #6eb8b8 45%, #3e857d 100%);
+  background-image: none;
   background-position: center;
   background-size: cover;
   transform: scale(1.015);
+}
+
+@media (min-width: 761px) {
+  .site-background {
+    background-image: url("hintergrundbild.png");
+  }
+}
+
+@media (prefers-reduced-data: reduce) {
+  .site-background {
+    background-image: none;
+  }
 }
 
 .site-background::after {
