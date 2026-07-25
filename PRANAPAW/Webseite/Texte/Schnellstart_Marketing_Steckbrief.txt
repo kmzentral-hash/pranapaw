@@ -1,0 +1,28 @@
+PRANAPAW SCHNELLSTART-STECKBRIEF
+================================
+
+1. Was genau du anbietest:
+   * Prana-Fernheilung (durch Kevin): Berührungslose, energetische Reinigung und Harmonisierung der Aura und Chakren für Menschen zur Aktivierung der Selbstheilungskräfte.
+   * Tierkommunikation & energetische Tierbegleitung (durch Chris): Intuitive Verständigung auf Herzens- und Frequenzebene, um Tiere besser zu verstehen und Blockaden zu lösen.
+   * Achtsamkeitsmedien: Geführte Meditationen, Mantren, Podcasts und Tagesimpulse zur Begleitung im Alltag.
+
+2. Für wen du es anbietest:
+   * Tierbesitzer (Hunde, Katzen, Pferde etc.), die das Verhalten oder die Gesundheit ihrer Tiere besser verstehen und energetisch unterstützen möchten.
+   * Menschen, die nach spiritueller Begleitung, innerer Ruhe, Chakren-Harmonisierung und ganzheitlichen Heilansätzen suchen.
+
+3. Welche Kanäle du aktuell nutzt:
+   * Webseite: https://pranapaw.net/ (mit Blog, Podcast-Player, Medien-Archiv und WhatsApp-Direktkontakt).
+   * E-Mail: info@pranapaw.net (lokal eingerichtet über Thunderbird).
+   * Social Media: Instagram (@pranapaw), Facebook, TikTok (@pranapaw.net) und YouTube.
+
+4. Was bisher gut oder schlecht funktioniert:
+   * Gut: Die gesamte technische Infrastruktur steht komplett (blitzschnelle, mobiloptimierte Landingpage auf Cloudflare Pages, Thunderbird-Kommunikation, strukturierte lokale Medien-Bibliothek, automatisches wöchentliches Archiv-Skript).
+   * Schlecht: Die organische Reichweite und erste Kundenkontakte sind noch im Aufbau, da die Profile und Links gerade erst finalisiert wurden. Die offizielle Gewerbeanmeldung ist für den 01.08.2026 geplant.
+
+5. Ob du eher lokale oder internationale Sichtbarkeit willst:
+   * Überregionaler Fokus auf den deutschsprachigen Raum (Deutschland, Österreich, Schweiz), da alle Angebote (Fernheilung & Tierkommunikation) ortsunabhängig aus der Ferne durchgeführt werden.
+   * Begleitend lokale Bekanntheit in Wuppertal und Umgebung für persönliche Weiterempfehlungen.
+
+6. Welche Aktion Besucher als Nächstes machen sollen (Call to Action):
+   * Den wöchentlichen Podcast anhören (aktuell als Haupt-Tab im Impuls des Tages).
+   * Unverbindliche Kontaktaufnahme per E-Mail (info@pranapaw.net) oder direkt über den WhatsApp-Button für Anfragen zur Tierkommunikation oder Pranaheilung.

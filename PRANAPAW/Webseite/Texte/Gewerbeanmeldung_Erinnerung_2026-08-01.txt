@@ -1,0 +1,27 @@
+ERINNERUNG: NEBENGEWERBE ANMELDEN (01.08.2026)
+==============================================
+
+Ja, das kannst du vollständig online erledigen.
+Da du in Wuppertal ansässig bist, läuft die digitale Gewerbeanmeldung direkt über das zentrale Wirtschafts-Service-Portal NRW (WSP.NRW) bzw. das Serviceportal der Stadt Wuppertal. Du musst dafür nicht persönlich zum Gewerbeamt.
+
+---
+
+### So funktioniert die Online-Anmeldung in Wuppertal Schritt für Schritt
+
+1. Plattform aufrufen: Gehe auf das Portal https://service.wirtschaft.nrw (oder folge dem Link zur Gewerbeanzeige im Serviceportal Wuppertal).
+2. Authentifizieren: Du kannst dich dort ganz einfach mit deinem Personalausweis (Online-Ausweisfunktion/eID) oder über ein BundID-Konto anmelden.
+3. Formular ausfüllen:
+   * Trage deine persönlichen Daten und die Betriebsstätte in Wuppertal ein.
+   * Beschreibe deine Tätigkeit möglichst präzise (z. B. "Beratung, Erstellung und Vertrieb von Webapplikationen und digitalen Inhalten").
+   * Vergewissere dich, dass du den Haken bei Nebenerwerb bzw. nebengewerblicher Tätigkeit setzt.
+
+4. Kosten: Die Bearbeitungsgebühr in NRW für Einzelunternehmen liegt online aktuell bei 26,00 €. Die Zahlung erfolgt direkt digital im Portal.
+5. Bestätigung erhalten: Nach Absenden und Prüfung erhältst du deine Gewerbe-Empfangsbescheinigung (den sogenannten Gewerbeschein) digital im Postfach des Portals zugestellt.
+
+---
+
+### Was passiert direkt danach?
+
+Sobald die Gewerbeanmeldung durch ist, geht die Information automatisch an das Finanzamt.
+
+Du wirst kurz darauf Post (oder eine Benachrichtigung im ELSTER-Portal) erhalten, um den Fragebogen zur steuerlichen Erfassung auszufüllen. Dort gibst du an, dass du im ersten Jahr (oder in den ersten Monaten) noch geringe/keine Einnahmen erwartest und kannst die Kleinunternehmerregelung (§ 19 UStG) wählen.

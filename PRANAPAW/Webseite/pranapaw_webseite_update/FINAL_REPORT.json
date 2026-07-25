@@ -1,0 +1,16 @@
+{
+  "version": "13.0.0-final",
+  "implemented": [
+    "Manifest and human-centered About view",
+    "WebP image variants and hero preload",
+    "Web3Forms async submission with timeout, disabled state, validation and fallback messaging",
+    "Mobile sticky WhatsApp CTA with safe-area support",
+    "Accessible hash route for ueber-uns",
+    "Updated JSON-LD, canonical and social preview image",
+    "Glassmorphism fallback and reduced-motion support"
+  ],
+  "notes": [
+    "Legal texts remain subject to professional review.",
+    "Newsletter remains mail-client based and should be connected to a consent-capable provider before active marketing."
+  ]
+}
