@@ -1,0 +1,102 @@
+name: Apply PRANAPAW podcast update
+
+on:
+  push:
+    branches: [podcast-update-2026-09-06]
+    paths: [.github/workflows/apply-podcast-update.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: podcast-update-2026-09-06
+      - name: Update podcast and production metadata
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          index = Path('index.html')
+          s = index.read_text(encoding='utf-8')
+
+          # Production-domain metadata.
+          if 'rel="canonical"' in s:
+              s = re.sub(r'<link rel="canonical" href="[^"]+">', '<link rel="canonical" href="https://www.pranapaw.net/">', s, count=1)
+          else:
+              s = s.replace('<meta name="robots" content="index,follow,max-image-preview:large">', '<meta name="robots" content="index,follow,max-image-preview:large">\n  <link rel="canonical" href="https://www.pranapaw.net/">', 1)
+          if 'property="og:url"' in s:
+              s = re.sub(r'<meta property="og:url" content="[^"]+">', '<meta property="og:url" content="https://www.pranapaw.net/">', s, count=1)
+          else:
+              s = s.replace('<meta property="og:locale" content="de_DE">', '<meta property="og:locale" content="de_DE">\n  <meta property="og:url" content="https://www.pranapaw.net/">', 1)
+          s = re.sub(r'<meta property="og:image" content="[^"]+">', '<meta property="og:image" content="https://www.pranapaw.net/hintergrundbild.png">', s, count=1)
+          s = re.sub(r'<meta name="twitter:image" content="[^"]+">', '<meta name="twitter:image" content="https://www.pranapaw.net/hintergrundbild.png">', s, count=1)
+
+          # Replace current featured podcast card while preserving all existing episodes in the archive.
+          featured = '''<!-- 3. NEUESTE PODCASTFOLGE -->
+        <section class="blog-section" aria-labelledby="podcast-heading">
+          <h3 id="podcast-heading" class="blog-section__title">🎙️ Neueste Podcastfolge</h3>
+          <article class="blog-card blog-card--podcast-featured">
+            <div class="blog-card__meta">
+              <span class="tag tag--podcast">Folge 5 · Podcast</span>
+              <time datetime="2026-09-06">6. September 2026</time>
+            </div>
+            <h3>Pranaheilung räumt deinen inneren Giftmüll auf</h3>
+            <p>
+              Eine neue Gesprächsfolge über die Idee energetischer Reinigung: belastende Muster wahrnehmen, innerlich loslassen und wieder mehr Ruhe, Klarheit und Balance finden.
+            </p>
+            <audio class="podcast-player" controls preload="none">
+              <source src="podcast-prana-giftmuell.opt.mp3" type="audio/mpeg">
+              Dein Browser unterstützt die Audiowiedergabe nicht.
+            </audio>
+            <div class="blog-card__footer">
+              <span>Podcast · ca. 25 Minuten</span>
+              <button class="text-link" type="button" data-blog-open="podcast-giftmuell">Folge öffnen <span>→</span></button>
+            </div>
+          </article>
+        </section>'''
+          s = re.sub(r'<!-- 3\. NEUESTE PODCASTFOLGE -->.*?</section>', featured, s, count=1, flags=re.S)
+
+          # Keep Folge 3 visible in the podcast archive after it leaves the featured position.
+          archive_marker = '<div class="podcast-archive-grid">'
+          folge3 = '''<div class="archive-card">
+              <div class="archive-card__meta">Folge 3</div>
+              <h4>Dankbarkeit als heilsame Frequenz für Tiere</h4>
+              <p>Warum Dankbarkeit als achtsamer Impuls für Mensch und Tier erlebt werden kann.</p>
+              <button class="text-link" type="button" data-blog-open="dankbarkeit">Folge & Begleittext öffnen <span>→</span></button>
+            </div>'''
+          if 'archive-card__meta">Folge 3<' not in s:
+              s = s.replace(archive_marker, archive_marker + '\n            ' + folge3, 1)
+
+          index.write_text(s, encoding='utf-8')
+
+          script = Path('script.js')
+          js = script.read_text(encoding='utf-8')
+          new_post = '''    "podcast-giftmuell": {
+      title: "Podcast: Pranaheilung räumt deinen inneren Giftmüll auf",
+      html: `
+        <button class="category-back-btn" type="button" data-blog-open="topic-prana">← Zurück zur Übersicht</button>
+        <audio class="podcast-player" controls preload="none" style="width: 100%; margin-bottom: 1.5rem; border-radius: 0.9rem;">
+          <source src="podcast-prana-giftmuell.opt.mp3" type="audio/mpeg">
+          Dein Browser unterstützt die Audiowiedergabe nicht.
+        </audio>
+        <p><strong>Eine neue Gesprächsfolge über energetische Reinigung und bewusstes Loslassen.</strong></p>
+        <p>Wir sprechen darüber, wie belastende Gedanken, Gewohnheiten und emotionale Spannungen aus Sicht energetischer Arbeit wahrgenommen werden und wie Achtsamkeit, innere Ausrichtung und Ruhe dabei unterstützen können, wieder mehr Klarheit und Balance zu erleben.</p>
+        <p><em>Energetische Begleitung ist ein ergänzendes Angebot und ersetzt keine medizinische oder psychotherapeutische Behandlung.</em></p>
+      `
+    },
+'''
+          if '"podcast-giftmuell"' not in js:
+              js = js.replace('  const blogPosts = {\n', '  const blogPosts = {\n' + new_post, 1)
+          script.write_text(js, encoding='utf-8')
+      - name: Commit generated website changes
+        run: |
+          git config user.name "PRANAPAW Update Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.html script.js
+          git commit -m "feat: publish podcast episode 5 and use pranapaw.net metadata" || exit 0
+          git push origin podcast-update-2026-09-06
